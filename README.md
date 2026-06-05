@@ -1,4 +1,4 @@
-# 🍝 Italian Garden Restaurant App
+# Italian Garden Restaurant App
 
 A responsive restaurant ordering application built using React.js. Users can browse Italian dishes, add items to the cart, remove items, and view the total order amount.
 
