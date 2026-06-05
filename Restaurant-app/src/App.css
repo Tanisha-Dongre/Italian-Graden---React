@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+nav h1 {
+  color: #c86b5a;
+  font-size: 2.8rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover{
+  color: #c86b5a;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 25px auto;
+}
+
+.login-box input {
+  padding: 12px;
+  width: 250px;
+  border: 2px solid #c86f5b;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  box-shadow: 0 0 8px rgba(200, 111, 91, 0.4);
+}
+
+.login-box button {
+  background-color: #c86f5b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #b35b48;
+  transform: translateY(-2px);
+}
+
+.login-box button:active {
+  transform: scale(0.98);
+}
+
+/* Hero Section */
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  background: #fff8f2
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 15px 0;
+}
+
+/* Buttons */
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #d35400;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #e67e22;
+}
+
+/* Menu */
+
+.menu {
+  padding: 40px;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu input {
+  display: block;
+  margin: 20px auto 40px auto;
+  width: 350px;
+  padding: 12px;
+  border: 2px solid #d16b5c;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Food Cards */
+
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.food-card {
+  background: white;
+  width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  padding-bottom: 20px;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.food-card h3 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.food-card p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c86b5a;
+  margin: 10px 0;
+}
+
+.food-card button {
+  display: block;
+  margin: 15px auto;
+}
+
+.food-card button:hover {
+  background: #a65447;
+}
+
+/* Cart Section */
+
+.cart-items {
+  background: white;
+  max-width: 900px;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 60px auto ;
+}
+
+.cart-items h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cart-items p {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.cart-items h3{
+  margin-top: 20px;
+  color: #c86b5a;
+}
+
+.cart-items button {
+  background: #c86b5a;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.checkout-btn {
+  background: #c86b5a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+}
+
+/*footer */
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+  color: #ff8a65;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
