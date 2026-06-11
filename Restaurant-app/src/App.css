@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,7 +90,7 @@ nav a:hover{
 
 /* Hero Section */
 
-.hero {
+/*.hero {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,8 @@ nav a:hover{
   align-items: center;
   gap: 15px;
   text-align: center;
-  background: #fff8f2
+  background: #fff8f2;
+
 }
 
 .hero h2 {
@@ -110,6 +111,46 @@ nav a:hover{
   font-size: 1.2rem;
   color: #666;
   margin: 15px 0;
+}*/
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 80%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+ }
+
+ .hero p h2{
+  color: #222;
+ }
+
+.hero-content {
+ position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translateY(20%);
+  transform: translateX(100%);
+  color: rgb(19, 18, 18);
+  text-align: left;
+  animation: Fadeout 1s ease;
+}
+
+@keyframes Fadeout {
+  from{
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  to{
+    opacity: 3;
+    transform: translateX(100%);
+  }
 }
 
 /* Buttons */
@@ -126,7 +167,7 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  background: #e67e22;
+  background: #d35400;
 }
 
 /* Menu */
@@ -166,14 +207,14 @@ button:hover {
   width: 300px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 5px 6px 15px rgba(30, 29, 29, 0.1);
   transition: all 0.3s ease;
   padding-bottom: 20px;
 }
 
 .food-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  box-shadow: 5px 12px 25px rgba(46, 44, 44, 0.2);
 }
 
 .food-card img {
